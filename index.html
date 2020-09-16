@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" type="text/css" href="survey.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        
+            <h1 id="title">Free Painting Workshop Survery</h1>
+            
+            <p id="description">Thank you for taking the time to make Free Painting Workshop better</p>
+            <div id="container">
+            <div id="form">
+                <form id="survey-form">
+                    <div id="text">
+                        <div><label id="name-label" class="label">Name</label></div>
+                        <div> <input class="text" type="text" placeholder="Name"></div>
+                        <div><label id="email-label" class="label">Email</label></div>
+                        <div><input class="text" type="email" placeholder="Email Address"></div>
+                        <div><label id="number-label" class="label">Age</label></div>
+                        <div><input class="text" type="number" min="5" max="120" placeholder="Age"></div>
+                    </div>
+                <div id="skill">
+                    <h4 id="lessons">What is your strongest skill?</h4>
+                    <select name="dropdow" class="dropdown">
+                        <option value="oilpainting">Oil Painting</option>
+                        <option value="watercolor">Water Color</option>
+                        <option value="sketching">Sketching</option>
+                        <option value="drawing">Drawing</option>
+                        <option value="portraits">Portraits</option>
+                        <option value="landscape">Landscapes</option>
+                    </select>
+                </div>    
+                <div id="radio">
+                    <h4>What is your prior experience with Art?</h4>
+                    <div><input type="radio"id="master" name="experience">
+                    <label for="master">Zen Master of the Arts</label></div>
+                    <div><input type="radio" id="medium" name="experience">
+                    <label for="medium">Some experience</label></div>
+                    <div> <input type="radio" id="beginner" name="experience">
+                    <label for="beginner">Absolute Beginner</label></div>
+                </div>
+                <h4>What would you like to learn next?</h4>
+                <div id="checkbox">        
+                    <div><input type="checkbox" value="Oil Painting"></label>
+                    <label for="oilpainting">Oil Painting</label></div>
+                    <div><input type="checkbox" value="Drawing">
+                    <label for="drawing">Drawing</label></div>
+                    <div><input type="checkbox" value="watercolor">
+                    <label for="watercolor">Water Color</label></div>
+                    <div><input type="checkbox" value="portraits">
+                    <label for="portrait">Portraits</label></div>
+                    <div><input type="checkbox" value="landscape">
+                    <label for="landscape">Landscape</label></div>
+                    <div><input type="checkbox" value="urban sketching">
+                    <label for="urban sketching">Urban Sketching</label></div>
+                    <div><input type="checkbox" value="visualjournal">
+                    <label for="visualjournal">Visual Journal</label></div>
+                </div>
+                <div id="comments">
+                    <div>
+                    <h4>Please share any suggestions, comments or questions below.</h4>
+                    </div>
+                    <div>
+                    <input type="text" class="text" id="comments"></div>
+                </div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    
+    </body>
+</html>
